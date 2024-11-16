@@ -2,6 +2,8 @@
 package Logica;
 
 import Persistencia.ControladoraPersistencia;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Controladora {
@@ -15,6 +17,22 @@ public class Controladora {
         usu.setContrasena(contrasena);
         usu.setRol(rol);
         controlPersis.crearUsuario(usu);
+    }
+
+    public List<Usuario> getUsuarios() {
+        return controlPersis.getUsuarios();
+    }
+    
+    public void borrarUsuario(int id) {
+        controlPersis.borrarUsuario(id);
+    }
+
+    public Usuario traerUsuario(int id) {
+        return controlPersis.traerUsuario(id);
+    }
+
+    public void editarUsuario(Usuario usu) {
+        controlPersis.editarUsuario(usu);
     }
     
 }

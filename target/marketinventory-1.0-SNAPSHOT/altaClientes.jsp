@@ -4,7 +4,7 @@
 <%@include file="Componentes/bodyprimeraparte.jsp"%>
 
 <h1>Alta Clientes</h1>
-<p>Desarrollo</p>
+<p>Este es el modulo para crear nuevos Clientes</p>
 
 <form class="user">
                                 <div class="form-group col">

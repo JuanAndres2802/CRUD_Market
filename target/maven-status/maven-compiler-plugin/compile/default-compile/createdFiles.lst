@@ -2,9 +2,11 @@ Logica\Usuario.class
 Persistencia\exceptions\IllegalOrphanException.class
 Logica\Controladora.class
 Persistencia\exceptions\NonexistentEntityException.class
-Persistencia\UsuarioJpaController.class
-com\mycompany\marketinventory\JakartaRestConfiguration.class
 com\mycompany\marketinventory\resources\JakartaEE8Resource.class
 Persistencia\exceptions\PreexistingEntityException.class
+Servlets\SvEditUsuarios.class
 Persistencia\ControladoraPersistencia.class
 Servlets\SvUsuario.class
+Persistencia\UsuarioJpaController.class
+com\mycompany\marketinventory\JakartaRestConfiguration.class
+Servlets\SvElimUsuarios.class

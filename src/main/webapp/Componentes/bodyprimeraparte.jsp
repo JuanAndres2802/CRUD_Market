@@ -62,7 +62,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Acciones:</h6>
-                        <a class="collapse-item" href="">Ver Clientes</a>
+                        <a class="collapse-item" href="verCLientes.jsp">Ver Clientes</a>
                         <a class="collapse-item" href="altaClientes.jsp">Alta Clientes</a>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Proveedores:</h6>
-                        <a class="collapse-item" href="">Ver Proveedores</a>
+                        <a class="collapse-item" href="verProveedores.jsp">Ver Proveedores</a>
                         <a class="collapse-item" href="altaProveedores.jsp">Alta Proveedores</a>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Productos:</h6>
-                        <a class="collapse-item" href="">Ver Productos</a>
+                        <a class="collapse-item" href="verProductos.jsp">Ver Productos</a>
                         <a class="collapse-item" href="altaProductos.jsp">Alta Productos</a>
                     </div>
                 </div>

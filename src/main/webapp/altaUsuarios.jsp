@@ -4,7 +4,7 @@
 <%@include file="Componentes/bodyprimeraparte.jsp"%>
 
 <h1>Alta Usuarios</h1>
-<p>Desarrollo</p>
+<p>Este es el modulo para crear nuevos Usuarios</p>
 
 <form class="user" action="SvUsuario" method="POST">
                                 <div class="form-group col">
