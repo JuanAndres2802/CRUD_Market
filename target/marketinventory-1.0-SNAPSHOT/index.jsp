@@ -3,7 +3,7 @@
 <%@include file="Componentes/header.jsp"%>
 <%@include file="Componentes/bodyprimeraparte.jsp"%>
 
-<p>Prueba 1</p>
+<p>BIENVENIDO</p>
 
 
 <%@include file="Componentes/bodyfinal.jsp"%>

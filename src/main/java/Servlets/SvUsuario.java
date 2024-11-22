@@ -36,8 +36,6 @@ Controladora control = new Controladora();
         HttpSession misesion = request.getSession();
         misesion.setAttribute("listaUsuarios", listaUsuarios);
         
-        System.out.println("Usuario: "+ listaUsuarios.get(0));
-        
         response.sendRedirect("verUsuarios.jsp");
     }
 

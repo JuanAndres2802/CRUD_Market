@@ -2,6 +2,15 @@
 
 <html lang="en">
 <body id="page-top">
+    
+    <!-- Validacion Sesión -->
+    <% HttpSession misesion = request.getSession();
+    String nombreUsuario = (String) request.getSession().getAttribute("nombreUsuario");
+    
+    if(nombreUsuario==null){
+        response.sendRedirect("sinLogin.jsp");
+        }
+    %>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -62,29 +71,12 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Acciones:</h6>
-                        <a class="collapse-item" href="verCLientes.jsp">Ver Clientes</a>
+                        <a class="collapse-item" href="SvClientes">Ver Clientes</a>
                         <a class="collapse-item" href="altaClientes.jsp">Alta Clientes</a>
                     </div>
                 </div>
             </li>
-            
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProveedores"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-solid fa-user"></i>
-                    <span>Proveedores</span>
-                </a>
-                <div id="collapseProveedores" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Proveedores:</h6>
-                        <a class="collapse-item" href="verProveedores.jsp">Ver Proveedores</a>
-                        <a class="collapse-item" href="altaProveedores.jsp">Alta Proveedores</a>
-                    </div>
-                </div>
-            </li>
-            
+      
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProductos"
@@ -96,7 +88,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Productos:</h6>
-                        <a class="collapse-item" href="verProductos.jsp">Ver Productos</a>
+                        <a class="collapse-item" href="SvProductos">Ver Productos</a>
                         <a class="collapse-item" href="altaProductos.jsp">Alta Productos</a>
                     </div>
                 </div>
@@ -155,7 +147,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><%=request.getSession().getAttribute("nombreUsuario")%></span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>

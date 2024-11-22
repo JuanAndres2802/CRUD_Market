@@ -6,38 +6,38 @@
 <h1>Alta Proveedores</h1>
 <p>Este es el modulo para crear nuevos Proveedores</p>
 
-<form class="user">
+<form class="user" action="SvProveedores" method="POST">
                                 <div class="form-group col">
                                     <div class="col-sm-6 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="documento"
-                                            placeholder="documento">
+                                        <input type="number" class="form-control form-control-user" id="documento" name="documento"
+                                            placeholder="Documento">
                                     </div>
                                     <div class="col-sm-6 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="nombre"
+                                        <input type="text" class="form-control form-control-user" id="nombre" name="nombre"
                                             placeholder="Nombre">
                                     </div>
                                     <div class="col-sm-6 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="apellido"
+                                        <input type="text" class="form-control form-control-user" id="apellido" name="apellido"
                                             placeholder="Apellido">
                                     </div>
                                     <div class="col-sm-6 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="telefono"
-                                            placeholder="Teléfono">
+                                        <input type="number" class="form-control form-control-user" id="telefono" name="telefono"
+                                            placeholder="Telefono">
                                     </div>
                                     <div class="col-sm-6 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="correo"
-                                            placeholder="Correo">
-                                    </div>
-                                    <div class="col-sm-6 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="empresa"
+                                        <input type="text" class="form-control form-control-user" id="empresa" name="empresa"
                                             placeholder="Empresa">
                                     </div>
                                 </div>
-                                
-                                <a href="#" class="btn btn-primary btn-user btn-block">
-                                    Agregar Proveedor
-                                </a>
+                                <button class="btn btn-primary btn-user btn-block" type ="submit">
+                                    Agregar proveedor
+                                </button>
                             </form>
 
 
 <%@include file="Componentes/bodyfinal.jsp"%>
+
+
+
+                                
+

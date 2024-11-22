@@ -6,22 +6,26 @@
 <h1>Alta Productos</h1>
 <p>Este es el modulo para crear nuevos Productos</p>
 
-<form class="user">
+<form class="user" action="SvProductos" method="POST">
                                 <div class="form-group col">
                                     <div class="col-sm-6 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="nombre"
-                                            placeholder="Nombre">
+                                        <input type="text" class="form-control form-control-user" id="nombreProducto" name="nombreProducto"
+                                            placeholder="Nombre del Producto">
                                     </div>
                                     <div class="col-sm-6 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="precio"
+                                        <input type="number" class="form-control form-control-user" id="precio" name="precio"
                                             placeholder="Precio">
                                     </div>
                                 </div>
-                                
-                                <a href="#" class="btn btn-primary btn-user btn-block">
+                                <button class="btn btn-primary btn-user btn-block" type ="submit">
                                     Agregar Producto
-                                </a>
+                                </button>
                             </form>
 
 
 <%@include file="Componentes/bodyfinal.jsp"%>
+
+
+
+                                
+
